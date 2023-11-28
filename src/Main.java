@@ -50,7 +50,7 @@ public class Main {
 
         }*/
 
-        int x = 10, y = 20;
+/*        int x = 10, y = 20;
 
         int z = (x > y) ? -100 : 100;
 
@@ -80,8 +80,44 @@ public class Main {
             }
         }
 
-        System.out.println("X è " + x);
+        System.out.println("X è " + x);*/
+
+        // ***************************************** LOOPS **********************************
+/*
+        int x = 6, y = 3;
+
+*//*        while (y <= x + 6) {
+            System.out.println(y); // y = 12
+            y += 3; // y = 15 quindi la condizione del while diventa falsa ed esco dal ciclo
+        }*//*
+         */
+/*        int x = 6;
+        do {
+            System.out.println(x = x + 1);
+
+        } while (x < 10);*/
+
+        // System.out.println(x);
+
+/*        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) continue; // col continue saltiamo l'iterazione corrente e passiamo alla prossima
+            System.out.println(i);
+        }*/
+
+/*        for (int i = 1; i <= 10; i++) {
+            if (i == 6) break; // col break usciamo proprio dal loop
+            System.out.println(i);
+        }*/
 
 
+        esterno:
+        for (int i = 0; i < 5; i++) {
+            if (i == 3) break;
+            for (int j = 0; j < 5; j++) {
+                if (j == 4) continue esterno;
+                System.out.println("j = " + j);
+            }
+            System.out.println("i = " + i);
+        }
     }
 }
